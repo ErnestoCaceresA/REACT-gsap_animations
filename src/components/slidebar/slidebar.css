@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  background-color: #000;
+  z-index: 10;
+  /* esconder el sidebar completamente */
+  left: -300px;
+  transition: left 0.5s;
+}
+/* funcion onClick de javascript activa este classList */
+.sidebar.active {
+  /* mostrar el slidebar */
+  left: 0;
+}
+
+.sidebar ul li {
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px 24px;
+}
+.sidebar ul .li{
+  display: block;
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px 24px;
+} 
+
+.sidebar .toggle-btn {
+  position: absolute;
+  top: 30px;
+  left: 330px;
+}
+/* para las tres barritas */
+.toggle-btn span {
+  width: 45px;
+  height: 4px;
+  background: #000;
+  display: block;
+  margin-top: 4px;
+}
